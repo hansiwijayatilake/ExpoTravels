@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<?php include 'vars.php';
+echo "I have a $color $car.";
+?>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<form method = "post" action = "testREGphp.php">
+    <table width = "400" border = "0" cellspacing = "1"
+           cellpadding = "2">
+
+        <tr>
+            <td width = "100">Employee Name</td>
+            <td><input name = "emp_name" type = "text"
+                       id = "emp_name"></td>
+        </tr>
+
+        <tr>
+            <td width = "100"> </td>
+            <td>
+                <input name = "add" type = "submit" id = "add"
+                       value = "Add Employee">
+            </td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>

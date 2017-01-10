@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:background-color="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="javascripts/jquery-1.9.1.min.js"></script>
+    <script src="javascripts/jquery.excoloSlider.min.js"></script>
+    <link href="stylesheets/jquery.excoloSlider.css" rel="stylesheet">
+    <link rel="stylesheet" href="registerStyle.css">
+    <script src="JS.js"></script>
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
+    <meta http-equiv="pragma" content="no-cache">
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header" data-role="collapsible" data-inset="false">
+
+            <h4> Menu </h4>
+            <ul data-role="listview">
+                <li><a class="click-me" href="home1.html">Home</a></li>
+                <li><a href="#">About Treasure Hunt</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a class="click-me" href="mkRes.html">Booking Facility</a></li>
+            </ul>
+
+
+
+
+        </div>
+
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="register.html"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container text-center">
+    <h1 style="font-family:Goudy Old Style; font-weight: bold; font-size: 68px; ">Expo Travels</h1>
+    <p style="font-family:Papyrus; font-weight: bold; font-size: 20px; color: chartreuse">"Explore with Us"</p>
+</div>
+
+<div class="container text-center" id="cont" data-role="fieldcontain">
+
+
+ <form name="frmRegistration" method="post" action="">
+
+    <label for="name"> Name: </label>
+    <input type="text" name="name" id="name" size="50">
+
+    <label for="userEmail"> Email: </label>
+    <input id="userEmail" type="text" class="demoInputBox" name="userEmail">
+
+    <label for="uname"> User Name: </label>
+    <input type="text" name="uname" id="uname" size="50">
+
+    <label for="pass"> Password: </label>
+    <input type="password" name="pass" id="pass" size="50">
+
+    <label for="repass"> Confirm Password: </label>
+    <input type="text" name="repass" id="repass" size="50">
+
+    <label for="nl"> Send me a Newsletter</label>
+    <input type="checkbox" name="nl" id="nl">
+
+    <br>
+    <br>
+
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+
+</form>
+
+    <!--*************************************************************-->
+
+   <!-- <form name="frmRegistration" method="post" action="">
+        <table border="0" width="500" align="center" class="demo-table">
+            <div class="message"><?php if(isset($message)) echo $message; ?></div>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" class="demoInputBox" name="userName" value="<?php if(isset($_POST['userName'])) echo $_POST['userName']; ?>"></td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" class="demoInputBox" name="firstName" value="<?php if(isset($_POST['firstName'])) echo $_POST['firstName']; ?>"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" class="demoInputBox" name="lastName" value="<?php if(isset($_POST['lastName'])) echo $_POST['lastName']; ?>"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" class="demoInputBox" name="password" value=""></td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td><input type="password" class="demoInputBox" name="confirm_password" value=""></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" class="demoInputBox" name="userEmail" value="<?php if(isset($_POST['userEmail'])) echo $_POST['userEmail']; ?>"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="newsL"> Please send me a Newsletter</td>
+            </tr>
+        </table>
+        <div>
+            <input type="submit" name="submit" value="Register" class="btnRegister">
+        </div>
+    </form>-->
+
+</div>
+
+<br>
+<br>
+<!--<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="form-body">
+                <ul class="nav nav-tabs final-login">
+                    <li class="active"><a data-toggle="tab" href="#sectionA">Sign In</a></li>
+                    <li><a data-toggle="tab" href="#sectionB">Join us!</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="sectionA" class="tab-pane fade in active">
+                        <div class="innter-form">
+                            <form class="sa-innate-form" method="post">
+                                <label>Email Address</label>
+                                <input type="text" name="username">
+                                <label>Password</label>
+                                <input type="password" name="password">
+                                <button type="submit">Sign In</button>
+                                <a href="">Forgot Password?</a>
+                            </form>
+                        </div>
+                        <div class="social-login">
+                            <p>- - - - - - - - - - - - - Sign In With - - - - - - - - - - - - - </p>
+                            <ul>
+                                <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="sectionB" class="tab-pane fade">
+                        <div class="innter-form">
+                            <form class="sa-innate-form" method="post">
+                                <label>Name</label>
+                                <input type="text" name="username">
+                                <label>Email Address</label>
+                                <input type="text" name="username">
+                                <label>Password</label>
+                                <input type="password" name="password">
+                                <button type="submit">Join now</button>
+                                <p>By clicking Join now, you agree to hifriends's User Agreement, Privacy Policy, and Cookie Policy.</p>
+                            </form>
+                        </div>
+                        <div class="social-login">
+                            <p>- - - - - - - - - - - - - Register With - - - - - - - - - - - - - </p>
+                            <ul>
+                                <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="container-fluid text-center">
+    <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
